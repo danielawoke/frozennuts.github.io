@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="referrer" content="origin" />
 		<meta name="google-signin-client_ID" content="890050126252-5fg6b0vah403pelb9ptfi08fh7h8cmmj.apps.googleusercontent.com
 ">
 	</head>
 		<body>
-			<h1>Hell World</h1>
+			<h1>Hello World</h1>
 			<p>I'm hosted with GitHub Pages.</p>
-			<script src="https://apis.google.com/js/platform.js" async defer>
-				gapi.load('auth2', function(){
-					gapi.auth2.init();
-				});
+			<script src="https://accounts.google.com/gsi/client" async defer>
 			</script>
-			<div class="g-signin2" data-onsuccess="onSignIn"></div>
-			<a href="#" onclick="signOut();">Sign out</a>
-			<script>
-			  function signOut() {
-			    var auth2 = gapi.auth2.getAuthInstance();
-			    auth2.signOut().then(function () {
-			      console.log('User signed out.');
-			    });
-			  }
-			</script>
+				<div id="g_id_onload"
+				     data-client_id="890050126252-5fg6b0vah403pelb9ptfi08fh7h8cmmj.apps.googleusercontent.com"
+				     data-context="signin"
+				     data-ux_mode="popup"
+				     data-login_uri="frozennuts.github.io"
+				     data-itp_support="true">
+				</div>
+
+				<div class="g_id_signin"
+				     data-type="standard"
+				     data-shape="rectangular"
+				     data-theme="outline"
+				     data-text="signin_with"
+				     data-size="large"
+				     data-logo_alignment="left">
+				</div>
 		</body>
 </html>
