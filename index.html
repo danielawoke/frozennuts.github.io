@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="google-signin-client_ID" content="890050126252-5fg6b0vah403pelb9ptfi08fh7h8cmmj.apps.googleusercontent.com
+">
+		<script src="as"></script>
+	</head>
+		<body>
+			<h1>Hello World</h1>
+			<p>I'm hosted with GitHub Pages.</p>
+			<script src="https://apis.google.com/js/platform.js" async defer>
+				gapi.load('auth2', function(){
+					gapi.auth2.init();
+				});
+			</script>
+			<div class="g-signin2" data-onsuccess="onSignIn"></div>
+			<a href="#" onclick="signOut();">Sign out</a>
+			<script>
+			  function signOut() {
+			    var auth2 = gapi.auth2.getAuthInstance();
+			    auth2.signOut().then(function () {
+			      console.log('User signed out.');
+			    });
+			  }
+			</script>
+		</body>
+</html>
