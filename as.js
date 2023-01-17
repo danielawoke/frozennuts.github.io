@@ -1,10 +1,10 @@
 alert("Hello! I am an alert box!!");
 
-const SerpApi = require('google-search-results-nodejs')
-const search = new SerpApi.GoogleSearch("Your Private Key")
-search.json({
- q: "Coffee", 
- location: "Austin, TX"
-}, (result) => {
-  console.log(result)
-})
+// const SerpApi = require('google-search-results-nodejs')
+// const search = new SerpApi.GoogleSearch("Your Private Key")
+// search.json({
+//  q: "Coffee", 
+//  location: "Austin, TX"
+// }, (result) => {
+//   console.log(result)
+// })
