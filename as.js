@@ -1,3 +1,5 @@
+alert("Hello! I am an alert box!!");
+
 const SerpApi = require('google-search-results-nodejs')
 const search = new SerpApi.GoogleSearch("Your Private Key")
 search.json({
