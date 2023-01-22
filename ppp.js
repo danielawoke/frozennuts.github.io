@@ -93,7 +93,7 @@ function gridCompile(){
     grid = grid+"</div><div id='spaz'><style>#spaz{margin-top:"+space+"px;}</style>";
   }
   grid = grid + "</div></div></div></div>";
-  grid = grid +"<script type='text' src='ppp.js'/><link rel='stylesheet' type='text' href='style.css'>";
+  grid = grid +"<script src='ppp.js'></script><link rel='stylesheet' type='text/css' href='style.css'>";
   document.write(grid);}
 //array
   {
