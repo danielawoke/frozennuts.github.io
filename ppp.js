@@ -571,8 +571,9 @@ function dead(){
             }
             gameOver = true;
             var newDiv = document.createElement("div");
-            newDiv.innerHTML = ""+score;
-            document.body.insertBefore(newDiv, document.body[0]);
+            newDiv.innerHTML = score;
+            var s = document.body;
+            document.body.insertBefore(newDiv, s);
             document.getElementById('sss').innerHTML = "You're DEAD!:(";
 
       }
