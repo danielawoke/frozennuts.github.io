@@ -575,9 +575,11 @@ function dead(){
             var newDiv = document.createElement("div");
             newDiv.innerHTML = score;
             newDiv.id = 'sss';
-            document.body.appendChild(newDiv);
             var sx = document.createElement("div");
             document.body.appendChild(sx);
+            newDiv.style.position = "relative";
+            document.body.appendChild(newDiv);
+
 
 
       }
