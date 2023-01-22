@@ -574,10 +574,9 @@ function dead(){
             document.getElementById('sss').innerHTML = "You're DEAD!:(";
             var newDiv = document.createElement("div");
             newDiv.innerHTML = score;
-            newDiv.id = 'sss';
+            newDiv.id = 'ssss';
             var sx = document.createElement("div");
             document.body.appendChild(sx);
-            newDiv.style.position = "relative";
             document.body.appendChild(newDiv);
 
 
