@@ -573,7 +573,7 @@ function dead(){
             var newDiv = document.createElement("div");
             newDiv.innerHTML = score;
             var s = document.body;
-            document.body.insertBefore(newDiv, s);
+            document.body.insertBefore(newDiv, s[0]);
             document.getElementById('sss').innerHTML = "You're DEAD!:(";
 
       }
