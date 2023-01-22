@@ -576,6 +576,9 @@ function dead(){
             newDiv.innerHTML = score;
             newDiv.id = 'sss';
             document.body.appendChild(newDiv);
+            var sx = document.createElement("div");
+            document.body.appendChild(sx);
+
 
       }
     }
